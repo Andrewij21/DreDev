@@ -20,10 +20,13 @@ function App() {
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen ">
-          <nav className="py-10 mb-12 flex justify-between">
+          <nav className="py-10 mb-12 flex items-center justify-between">
             <h1 className="text-xl dark:text-white">DevelopedByDre</h1>
-            <ul className="flex items-center">
-              <li className="invisible md:visible">
+            <span className="md:hidden ">
+              <AiOutlineMenu className="cursor-pointer text-2xl" />
+            </span>
+            <ul className="md:flex md:items-center md:w-auto md:py-0 py-4 md:visible hidden">
+              <li className="">
                 {darkMode ? (
                   <FaSun
                     className="cursor-pointer text-2xl fill-yellow-300"
@@ -36,16 +39,13 @@ function App() {
                   />
                 )}
               </li>
-              <li className="invisible md:visible">
+              <li className="">
                 <a
                   href="#"
                   className=" bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                 >
                   Resume
                 </a>
-              </li>
-              <li className="visible md:invisible">
-                <AiOutlineMenu className="cursor-pointer text-2xl" />
               </li>
             </ul>
           </nav>
