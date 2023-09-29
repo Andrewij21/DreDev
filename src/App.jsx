@@ -22,7 +22,7 @@ function App() {
         <section className="min-h-screen ">
           <nav className="py-10 mb-12 flex items-center justify-between">
             <h1 className="text-xl dark:text-white">DevelopedByDre</h1>
-            <span className="md:hidden ">
+            <span className="md:hidden dark:hover:text-teal-600 dark:text-white">
               <AiOutlineMenu className="cursor-pointer text-2xl" />
             </span>
             <ul className="md:flex md:items-center md:w-auto md:py-0 py-4 md:visible hidden">
