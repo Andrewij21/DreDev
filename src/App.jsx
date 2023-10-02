@@ -20,28 +20,24 @@ function App() {
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen ">
-          <nav className="py-10 mb-12 flex items-center justify-between">
-            <h1 className="text-xl dark:text-white">DevelopedByDre</h1>
-            <button className="md:hidden dark:text-white cursor-pointer  group">
-              <AiOutlineMenu className="text-2xl " />
-              <div className="absolute top-0 -right-0 h-screen w-1/3  opacity-0 group-focus:right-1 group-focus:opacity-100 transition-all duration-300 pointer-events-none">
-                <ul className="flex flex-col items-center w-full pt-10 text-base cursor-pointer group-focus:pointer-events-auto">
-                  <li className="hover:text-cyan-600 py-4 px-6 w-full">Home</li>
-                  <li className="hover:text-cyan-600 py-4 px-6 w-full">
-                    Service
-                  </li>
-                  <li className="hover:text-cyan-600 py-4 px-6 w-full">
-                    Portofolio
-                  </li>
-                  <li className="py-4 px-6 w-full text-2xl text-center">
+          <nav className="py-10 mb-12 flex items-center justify-between relative">
+            <h1 className=" z-10 text-xl dark:text-white">DevelopedByDre</h1>
+            <button className="md:hidden dark:text-white cursor-pointer group">
+              <AiOutlineMenu className="text-2xl" />
+              <div className="absolute -right-0 w-full  opacity-0 group-focus:right-1 group-focus:opacity-100 transition-all duration-300 pointer-events-none pl-1">
+                <ul className="flex flex-row items-center w-full text-md gap-10 cursor-pointer group-focus:pointer-events-auto justify-start py-2">
+                  <li className="hover:text-cyan-600">Home</li>
+                  <li className="hover:text-cyan-600">Service</li>
+                  <li className="hover:text-cyan-600">Portofolio</li>
+                  <li className=" ">
                     {darkMode ? (
                       <FaSun
-                        className=" fill-yellow-300 inline-block"
+                        className=" fill-yellow-300"
                         onClick={() => setDarkMode(!darkMode)}
                       />
                     ) : (
                       <BsMoonStarsFill
-                        className="  inline-block"
+                        className=" "
                         onClick={() => setDarkMode(!darkMode)}
                       />
                     )}
