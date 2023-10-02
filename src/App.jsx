@@ -21,11 +21,13 @@ function App() {
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
         <section className="min-h-screen ">
           <nav className="py-10 mb-12 flex items-center justify-between relative">
-            <h1 className=" z-10 text-xl dark:text-white">DevelopedByDre</h1>
+            <h1 className=" z-10 text-xl md:text-2xl dark:text-white">
+              DevelopedByDre
+            </h1>
             <button className="md:hidden dark:text-white cursor-pointer group">
-              <AiOutlineMenu className="text-2xl" />
+              <AiOutlineMenu className="text-xl md:text-2xl" />
               <div className="absolute -right-0 w-full  opacity-0 group-focus:right-1 group-focus:opacity-100 transition-all duration-300 pointer-events-none pl-1">
-                <ul className="flex flex-row items-center w-full text-md gap-10 cursor-pointer group-focus:pointer-events-auto justify-start py-2">
+                <ul className="flex flex-row items-center w-full text-base gap-10 cursor-pointer group-focus:pointer-events-auto justify-start pt-2 flex-wrap">
                   <li className="hover:text-cyan-600">Home</li>
                   <li className="hover:text-cyan-600">Service</li>
                   <li className="hover:text-cyan-600">Portofolio</li>
