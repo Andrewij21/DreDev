@@ -22,10 +22,34 @@ function App() {
         <section className="min-h-screen ">
           <nav className="py-10 mb-12 flex items-center justify-between">
             <h1 className="text-xl dark:text-white">DevelopedByDre</h1>
-            <span className="md:hidden dark:hover:text-teal-600 dark:text-white">
-              <AiOutlineMenu className="cursor-pointer text-2xl" />
-            </span>
-            <ul className="md:flex md:items-center md:w-auto md:py-0 py-4 md:visible hidden">
+            <button className="md:hidden dark:text-white cursor-pointer  group">
+              <AiOutlineMenu className="text-2xl " />
+              <div className="absolute top-0 -right-0 h-screen w-1/3  opacity-0 group-focus:right-1 group-focus:opacity-100 transition-all duration-300 pointer-events-none">
+                <ul className="flex flex-col items-center w-full pt-10 text-base cursor-pointer group-focus:pointer-events-auto">
+                  <li className="hover:text-cyan-600 py-4 px-6 w-full">Home</li>
+                  <li className="hover:text-cyan-600 py-4 px-6 w-full">
+                    Service
+                  </li>
+                  <li className="hover:text-cyan-600 py-4 px-6 w-full">
+                    Portofolio
+                  </li>
+                  <li className="py-4 px-6 w-full text-2xl text-center">
+                    {darkMode ? (
+                      <FaSun
+                        className=" fill-yellow-300 inline-block"
+                        onClick={() => setDarkMode(!darkMode)}
+                      />
+                    ) : (
+                      <BsMoonStarsFill
+                        className="  inline-block"
+                        onClick={() => setDarkMode(!darkMode)}
+                      />
+                    )}
+                  </li>
+                </ul>
+              </div>
+            </button>
+            <ul className="md:flex md:items-center md:w-auto md:py-0 py-4 hidden">
               <li className="">
                 {darkMode ? (
                   <FaSun
