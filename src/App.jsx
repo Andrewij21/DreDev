@@ -16,6 +16,7 @@ import { useState } from "react";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [menuVisible, setMenuVisible] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
@@ -24,24 +25,36 @@ function App() {
             <h1 className=" z-10 text-xl md:text-2xl dark:text-white">
               DevelopedByDre
             </h1>
-            <button className="md:hidden dark:text-white cursor-pointer group">
+            <button
+              className="md:hidden dark:text-white cursor-pointer group"
+              onClick={() => setMenuVisible(!menuVisible)}
+            >
               <AiOutlineMenu className="text-xl md:text-2xl" />
-              <div className="absolute -right-0 w-full  opacity-0 group-focus:right-1 group-focus:opacity-100 transition-all duration-300 pointer-events-none pl-1">
-                <ul className="flex flex-row items-center w-full text-base gap-10 cursor-pointer group-focus:pointer-events-auto justify-start pt-4 flex-wrap">
-                  <li className="hover:text-cyan-600">Home</li>
-                  <li className="hover:text-cyan-600">Service</li>
-                  <li className="hover:text-cyan-600">Portofolio</li>
-                  <li className=" ">
+              <div
+                className={`${
+                  menuVisible ? "opacity-100 right-1" : "opacity-0 right-0"
+                } absolute w-full transition-all duration-300 pl-1 pointer-events-none`}
+              >
+                {/* className="absolute -right-0 w-full  opacity-0 group-focus:right-1 group-focus:opacity-100 transition-all duration-300 pointer-events-none pl-1" */}
+                <ul
+                  className={`flex flex-row items-center w-full text-base gap-10 cursor-pointer ${
+                    menuVisible ? "pointer-events-auto" : "pointer-events-none"
+                  } justify-start pt-4 flex-wrap`}
+                >
+                  <li className="hover:text-cyan-600">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li className="hover:text-cyan-600">
+                    <a href="#service">Service</a>
+                  </li>
+                  <li className="hover:text-cyan-600">
+                    <a href="#portofolio">Portofolio</a>
+                  </li>
+                  <li className="" onClick={() => setDarkMode(!darkMode)}>
                     {darkMode ? (
-                      <FaSun
-                        className=" fill-yellow-300"
-                        onClick={() => setDarkMode(!darkMode)}
-                      />
+                      <FaSun className="fill-yellow-300" />
                     ) : (
-                      <BsMoonStarsFill
-                        className=" "
-                        onClick={() => setDarkMode(!darkMode)}
-                      />
+                      <BsMoonStarsFill />
                     )}
                   </li>
                 </ul>
@@ -71,7 +84,7 @@ function App() {
               </li>
             </ul>
           </nav>
-          <div className="text-center p-10">
+          <div className="text-center p-10" id="home">
             <h2 className="text-5xl text-teal-600 py-2 font-medium md:text-6xl">
               Andre Wijaya
             </h2>
@@ -110,7 +123,7 @@ function App() {
             <img src={andre} alt="andre" className="object-cover" />
           </div>
         </section>
-        <section>
+        <section id="service">
           <div>
             <h3 className="text-3xl py-1 font-medium dark:text-white">
               Services I offer
@@ -185,7 +198,7 @@ function App() {
             </div>
           </div>
         </section>
-        <section>
+        <section id="portofolio">
           <div>
             <h3 className="text-3xl py-1 font-medium dark:text-white">
               Portofolio
