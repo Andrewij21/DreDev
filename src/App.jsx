@@ -12,6 +12,14 @@ import design from "../public/design.png";
 import api from "../public/api2.png";
 import web1 from "../public/memories.png";
 import web2 from "../public/todo.png";
+import js from "../public/js.png";
+import css from "../public/css.png";
+import html from "../public/html.png";
+import tailwind from "../public/Tailwind.png";
+import node from "../public/Node.png";
+import mongodb from "../public/MongoDB.png";
+import postgresql from "../public/postgresql.png";
+import mui from "../public/mui.png";
 import { useState } from "react";
 
 function App() {
@@ -195,6 +203,44 @@ function App() {
                 PostgreSQL
               </p>
               <p className="text-gray-800 dark:text-slate-200 py-1">Draw.io</p>
+            </div>
+          </div>
+        </section>
+        <section id="tech">
+          <div className="py-10">
+            <h3 className="text-3xl py-1 font-medium dark:text-white capitalize">
+              skills
+            </h3>
+            <div className="flex">
+              <h4 className="text-xl font-semibold basis-1/2 break-words">
+                Some skills that i learn from my experience as a developer
+              </h4>
+              <div className="flex flex-row py-2 justify-center gap-10 flex-1 flex-wrap ">
+                <div className="h-24 w-24 rounded-full">
+                  <img src={js} />
+                </div>
+                <div className="h-24 w-24 rounded-full">
+                  <img src={html} />
+                </div>
+                <div className="h-24 w-24 rounded-full">
+                  <img src={css} />
+                </div>
+                <div className="h-24 w-24 rounded-full">
+                  <img src={tailwind} />
+                </div>
+                <div className="h-24 w-24 rounded-full">
+                  <img src={postgresql} />
+                </div>
+                <div className="h-24 w-24 rounded-full">
+                  <img src={node} />
+                </div>
+                <div className="h-24 w-24 rounded-full">
+                  <img src={mongodb} />
+                </div>
+                <div className="h-24 w-24 rounded-full">
+                  <img src={mui} />
+                </div>
+              </div>
             </div>
           </div>
         </section>
