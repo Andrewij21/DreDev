@@ -17,9 +17,9 @@ import cinemaku from "/cinemaku.png";
 import { useState } from "react";
 
 const portofolio = [
-  { img: memories, link: "https://cinemaku.vercel.app/" },
+  { img: memories, link: "https://memory-phi-ten.vercel.app/" },
   { img: cinemaku, link: "https://cinemaku.vercel.app/" },
-  { img: tod, link: "https://andrewij21.github.io/truth-or-dare/" },
+  { img: tod, link: "https://andrewij21.github.io/Truth-or-Dare/" },
   { img: todo, link: "https://master--poetic-halva-a0d5af.netlify.app/" },
 ];
 
