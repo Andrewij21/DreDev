@@ -1,31 +1,50 @@
 import server from "/server2.png";
 import design from "/design.png";
 import api from "/api2.png";
+import Card from "./ui/Card";
+
+const SERVICES = [
+  {
+    img: design,
+    title: "Website",
+    body: "Boost your online presence with user-friendly web service and seamless performance for an great digital experience.",
+    tools: ["Figma", "ReactJs", "Tailwindcss"],
+  },
+  {
+    img: api,
+    title: "API",
+    body: "I create secure REST APIs with authentication, authorization, and more for seamless communication across devices.",
+    tools: ["NodeJs", "Express", "PrismaJs"],
+  },
+  {
+    img: server,
+    title: "Database",
+    body: "Ensure data security and scalability with my expertise in designing and building robust database architectures.",
+    tools: ["MongoDB", "PostgreSQL", "Draw.io"],
+  },
+];
 
 export default function Service() {
   return (
-    <section id="service">
+    <section id="services" className="">
       <div>
-        <h3 className="text-3xl py-1 font-medium dark:text-white">
+        <h3 className="text-3xl font-medium text-teal-500  dark:text-teal-400 mb-2">
           Services I offer
         </h3>
-        <p className="text-md py-2 text-gray-800 leading-8 dark:text-white">
-          I have studied the program for approximately 4 years, I am also active
-          in campus organizations and laboratories. I really like software
-          development, especially the backend. I can create
-          <span className="text-teal-500"> RESTapi </span> from simple to
-          complex using various types of databases such as MongoDB and
-          Postgresql. For the frontend I usually use
-          <span className="text-teal-500"> ReactJs </span>
-          with tailwind for styling.
-        </p>
-        <p className="text-md py-2 text-gray-800 leading-8 dark:text-white">
-          I love learning new stuff and making things, here are some things I
-          will make for you.
+        <p className="text-md py-2 text-gray-800 dark:text-white">
+          Welcome to my Full Stack Development service! I specialize in
+          seamlessly integrating front-end and back-end technologies to create
+          dynamic web applications. Whether it&apos;s designing user-friendly
+          interfaces or implementing robust server-side functionalities, I
+          deliver efficient and scalable solutions. Let&apos;s transform your
+          ideas into a digital reality!
         </p>
       </div>
       <div className="md:flex max-w-full gap-10 dark:text-slate-300">
-        <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:hover:bg-gradient-to-b dark:hover:from-cyan-500 basis-1/2">
+        {SERVICES.map((service, i) => (
+          <Card key={i} content={service} />
+        ))}
+        {/* <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:hover:bg-gradient-to-b dark:hover:from-cyan-500 basis-1/2">
           <img src={design} className="w-24 h-24 inline-block" />
           <h3 className="text-lg font-medium pt-8 pb-2">Website</h3>
           <p className="py-2">
@@ -67,7 +86,7 @@ export default function Service() {
           <p className="text-gray-800 dark:text-slate-200 py-1">MongoDB</p>
           <p className="text-gray-800 dark:text-slate-200 py-1">PostgreSQL</p>
           <p className="text-gray-800 dark:text-slate-200 py-1">Draw.io</p>
-        </div>
+        </div> */}
       </div>
     </section>
   );

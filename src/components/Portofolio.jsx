@@ -14,7 +14,7 @@ export default function Portofolio() {
   return (
     <section id="portofolio">
       <div>
-        <h3 className="text-3xl py-1 font-medium dark:text-white">
+        <h3 className="text-3xl font-medium text-teal-500 dark:text-teal-400 mb-2">
           Portofolio
         </h3>
         <p className="text-md py-2 text-gray-800 leading-8 dark:text-white">
@@ -24,7 +24,7 @@ export default function Portofolio() {
             href="https://github.com/Andrewij21"
             rel="noreferrer"
             target="_blank"
-            className="text-teal-500"
+            className="text-teal-500 dark:text-emerald-300 ml-1"
           >
             github
           </a>
