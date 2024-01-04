@@ -17,7 +17,7 @@ export default function Portofolio() {
         <h3 className="text-3xl font-medium text-teal-500 dark:text-teal-400 mb-2">
           Portofolio
         </h3>
-        <p className="text-md py-2 text-gray-800 leading-8 dark:text-white">
+        <p className="py-2 text-gray-800 leading-8 dark:text-white">
           Most projects that i created is related to API or Database so if you
           want to see my Backend you can visited my
           <a

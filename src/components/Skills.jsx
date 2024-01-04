@@ -43,8 +43,8 @@ export default function Skills() {
       <h3 className="text-3xl font-medium text-teal-500 dark:text-teal-400 justify-end mb-6">
         Skills
       </h3>
-      <div className="grid grid-cols-6 gap-x-2">
-        <div className="space-y-1 text-[1rem]">
+      <div className="grid grid-cols-6 gap-x-2 gap-y-4">
+        <div className="space-y-1 col-span-4 md:col-span-1">
           <button
             className={`${
               topic === "frontend"
@@ -83,7 +83,7 @@ export default function Skills() {
             ))}
           </ul>
         </div>
-        <div className="col-span-4 leading-relaxed tracking-wide bg-teal-400 dark:bg-gradient-to-b dark:from-cyan-500 text-white p-10 rounded-lg font-medium">
+        <div className="col-span-6 md:col-span-4 text-center md:text-left leading-relaxed tracking-wide bg-teal-400 dark:bg-gradient-to-b dark:from-cyan-500 text-white p-10 rounded-lg font-medium">
           {CONTENTS[topic].thought}
         </div>
       </div>
