@@ -6,8 +6,10 @@ export default function About() {
       </h4>
       <p className="">
         I&apos;m currently student at
-        <span className="mx-1 text-teal-500 dark:text-emerald-300 font-medium">
-          University of Bandar Lampung.
+        <span className="mx-1 text-teal-500 dark:text-emerald-300 font-medium border-b-white border-b-2">
+          <a href="https://ubl.ac.id/" rel="noreferrer" target="_blank">
+            University of Bandar Lampung.
+          </a>
         </span>
         I&apos;m a active member in internet of things laboratory & Bank
         Indonesia organization (genbi).
