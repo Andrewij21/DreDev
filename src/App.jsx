@@ -4,8 +4,9 @@ import Service from "./components/Service";
 import Portofolio from "./components/Portofolio";
 import Landing from "./components/Landing";
 import About from "./components/About";
-import Skills from "./components/skills";
+import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import ScrollToTopBtn from "./components/ui/ScrollToTopBtn";
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -21,6 +22,7 @@ function App() {
           <Experience />
           <Portofolio />
         </main>
+        <ScrollToTopBtn />
       </div>
     </div>
   );
