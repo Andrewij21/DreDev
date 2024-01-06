@@ -15,8 +15,8 @@ export default function Landing() {
           Fullstack Developer
         </h3>
         <p className="text-md  py-5 text-gray-800 leading-8 md:text-xl max-w-lg mx-auto dark:text-white">
-          Learning new stuff always fun for me, especially when it comes to
-          software development, Boi what a joy...
+          Exploring new things is an absolute blast, especially in the dynamic
+          realm of software development.
         </p>
       </div>
       <div className="flex text-5xl py-3 justify-center gap-16 text-gray-600">
