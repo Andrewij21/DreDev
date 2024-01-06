@@ -2,28 +2,28 @@
     {
       "title": "Lab.IOT Universitas Bandar Lampung · Self-employed",
       "time": "Jul 2021 - Jun 2022",
-      "img": "../experience/LOGO-UBL.png",
+      "img": "experience/LOGO-UBL.png",
       "type": "Software Developer",
       "body": "During my first year at university, I devoted a significant amount of time to the laboratory specializing in the Internet of Things (IoT). There, I gained extensive knowledge in programming, sensors, and various aspects of IoT. Engaging in numerous projects assigned by my seniors further enhanced my practical skills and understanding of the field."
     },
     {
       "title": "PT. Pindad (Persero) · Internship",
       "time": "Aug 2022 - Dec 2022",
-      "img": "../experience/pindad.png",
+      "img": "experience/pindad.png",
       "type": "Frontend Web Developer",
       "body": "In my fifth semester, I landed my first internship at PT. Pindad, a defense company specializing in the construction of tanks, weapons, and heavy equipment. My primary responsibility was to develop a website known as ICSS (Integrated Communication Security System). This website serves the purpose of monitoring all areas within Pindad, featuring CCTV displays and providing alerts in case sensors in the Pindad area are activated."
     },
     {
       "title": "Generasi Baru Indonesia (GenBI) · Part-time",
       "time": "Mar 2023 - Des 2023",
-      "img": "../experience/genbi.png",
+      "img": "experience/genbi.png",
       "type": "Member",
       "body": "I actively participate as a member of Generasi Baru Indonesia (GenBI) at the University of Bandar Lampung. Engaging with GenBI has provided me with valuable experiences and opportunities to contribute to various initiatives and projects. Being part of this dynamic community has allowed me to collaborate with fellow members, attend events, and actively contribute to the organization's goals."
     },
     {
       "title": "cv nusantara agro tech · Internship",
       "time": "sept 2023 - Present",
-      "img": "../experience/leaft.png",
+      "img": "experience/leaft.png",
       "type": "Fullstack Developer",
       "body": "Here, I took on the role of a full-stack developer, tasked with creating an admin dashboard for a technology known as Smart Shaker. Additionally, I was responsible for developing the backend API to support both web and mobile platforms."
     }
