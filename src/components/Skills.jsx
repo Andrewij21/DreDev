@@ -42,15 +42,15 @@ export default function Skills() {
             Tools
           </button>
         </div>
-        <div className="">
-          <ul className="tracking-wide dark:text-teal-400">
+        <div className="col-span-2 sm:col-span-1">
+          <ul className="tracking-wide dark:text-teal-400 shadow-lg dark:shadow-none h-full rounded-lg px-2 font-thin">
             {CONTENTS[topic].lists.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
           </ul>
         </div>
-        <div className="col-span-6 md:col-span-4 text-center md:text-left leading-relaxed tracking-wide bg-teal-400 dark:bg-gradient-to-b dark:from-cyan-500 text-white p-10 rounded-lg font-medium">
-          {CONTENTS[topic].thought}
+        <div className="col-span-6 md:col-span-4 md:text-left leading-relaxed tracking-wide shadow-xl  dark:bg-gradient-to-b dark:from-cyan-500  p-10 rounded-lg min-h-[260px]">
+          <p className="text-center">{CONTENTS[topic].thought}</p>
         </div>
       </div>
     </section>
