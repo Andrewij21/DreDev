@@ -4,18 +4,38 @@ import tod from "/portofolio/tod.png";
 import cinemaku from "/portofolio/cinemaku.png";
 
 const portofolio = [
-  { img: memories, link: "https://memory-phi-ten.vercel.app/" },
-  { img: cinemaku, link: "https://cinemaku.vercel.app/" },
-  { img: tod, link: "https://andrewij21.github.io/Truth-or-Dare/" },
-  { img: todo, link: "https://master--poetic-halva-a0d5af.netlify.app/" },
+  {
+    title: "Memories App",
+    img: memories,
+    link: "https://memory-phi-ten.vercel.app/",
+    body: "Website for those of you who want to save memories with your loved ones",
+  },
+  {
+    title: "Cinemaku",
+    img: cinemaku,
+    link: "https://cinemaku.vercel.app/",
+    body: "See the latest trending movies & series",
+  },
+  {
+    title: "Truth or Dare",
+    img: tod,
+    link: "https://andrewij21.github.io/Truth-or-Dare/",
+    body: "Simple Truth or Dare game for friends and familiy to play along",
+  },
+  {
+    title: "My Todo",
+    img: todo,
+    link: "https://master--poetic-halva-a0d5af.netlify.app/",
+    body: "Simple Todo apps using React with authentication and validation",
+  },
 ];
 
 export default function Portofolio() {
   return (
-    <section id="portofolio">
+    <section id="portofolio" className="dark:text-white">
       <div>
         <h3 className="text-3xl font-medium text-teal-500 dark:text-teal-400 mb-2">
-          Portofolio <span className="text-2xl"></span>
+          Portofolio <span className="text-2xl">🚀</span>
         </h3>
         <p className="py-2 text-gray-800 leading-8 dark:text-white">
           Most projects that i created is related to API or Database so if you
@@ -32,16 +52,20 @@ export default function Portofolio() {
           diffrent tech
         </p>
       </div>
-      <div className="flex flex-col gap-10 py-10 md:flex-row md:flex-wrap">
+      <div className="py-10 ">
         {portofolio.map((project, i) => {
           return (
-            <div className="basis-1/3 flex-1" key={i}>
-              <a href={project.link} rel="noreferrer" target="_blank">
-                <img
-                  src={project.img}
-                  className="rounded-lg object-cover w-full "
-                />
-              </a>
+            <div className="space-y-4 mb-6" key={i}>
+              <h3 className="text-xl w-fit font-medium tracking-wider mb-2 hover:text-cyan-500">
+                <a href={project.link} rel="noreferrer" target="_blank">
+                  {project.title}
+                </a>
+              </h3>
+              <img
+                src={project.img}
+                className="rounded-lg object-fill w-full h-full"
+              />
+              <p className="leading-loose font-normal">{project.body}</p>
             </div>
           );
         })}
