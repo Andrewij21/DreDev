@@ -1,7 +1,7 @@
-import memories from "/memories.png";
-import todo from "/todo.png";
-import tod from "/tod.png";
-import cinemaku from "/cinemaku.png";
+import memories from "/portofolio/memories.png";
+import todo from "/portofolio/todo.png";
+import tod from "/portofolio/tod.png";
+import cinemaku from "/portofolio/cinemaku.png";
 
 const portofolio = [
   { img: memories, link: "https://memory-phi-ten.vercel.app/" },
@@ -15,7 +15,7 @@ export default function Portofolio() {
     <section id="portofolio">
       <div>
         <h3 className="text-3xl font-medium text-teal-500 dark:text-teal-400 mb-2">
-          Portofolio
+          Portofolio <span className="text-2xl"></span>
         </h3>
         <p className="py-2 text-gray-800 leading-8 dark:text-white">
           Most projects that i created is related to API or Database so if you

@@ -1,6 +1,6 @@
-import server from "/server2.png";
-import design from "/design.png";
-import api from "/api2.png";
+import server from "/service/server2.png";
+import design from "/service/design.png";
+import api from "/service/api2.png";
 import Card from "./ui/Card";
 
 const SERVICES = [
