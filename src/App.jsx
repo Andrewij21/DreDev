@@ -5,6 +5,7 @@ import Portofolio from "./components/Portofolio";
 import Landing from "./components/Landing";
 import About from "./components/About";
 import Skills from "./components/skills";
+import Experience from "./components/Experience";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -17,6 +18,7 @@ function App() {
           <About />
           <Service />
           <Skills />
+          <Experience />
           <Portofolio />
         </main>
       </div>
