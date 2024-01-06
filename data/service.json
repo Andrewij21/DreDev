@@ -1,0 +1,20 @@
+[
+    {
+      "img": "../service/design.png",
+      "title": "Website",
+      "body": "Boost your online presence with user-friendly web service and seamless performance for an great digital experience.",
+      "tools": ["Figma", "ReactJs", "Tailwindcss"]
+    },
+    {
+      "img": "../service/api2.png",
+      "title": "API",
+      "body": "I create secure REST APIs with authentication, authorization, and more for seamless communication across devices.",
+      "tools": ["NodeJs", "Express", "PrismaJs"]
+    },
+    {
+      "img": "../service/server2.png",
+      "title": "Database",
+      "body": "Ensure data security and scalability with my expertise in designing and building robust database architectures.",
+      "tools": ["MongoDB", "PostgreSQL", "Draw.io"]
+    }
+  ]

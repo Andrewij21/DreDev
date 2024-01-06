@@ -1,28 +1,5 @@
-import server from "/service/server2.png";
-import design from "/service/design.png";
-import api from "/service/api2.png";
+import SERVICES from "../../data/service.json";
 import Card from "./ui/Card";
-
-const SERVICES = [
-  {
-    img: design,
-    title: "Website",
-    body: "Boost your online presence with user-friendly web service and seamless performance for an great digital experience.",
-    tools: ["Figma", "ReactJs", "Tailwindcss"],
-  },
-  {
-    img: api,
-    title: "API",
-    body: "I create secure REST APIs with authentication, authorization, and more for seamless communication across devices.",
-    tools: ["NodeJs", "Express", "PrismaJs"],
-  },
-  {
-    img: server,
-    title: "Database",
-    body: "Ensure data security and scalability with my expertise in designing and building robust database architectures.",
-    tools: ["MongoDB", "PostgreSQL", "Draw.io"],
-  },
-];
 
 export default function Service() {
   return (

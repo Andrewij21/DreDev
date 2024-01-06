@@ -1,38 +1,4 @@
-const CONTENTS = {
-  frontend: {
-    title: "Frontend",
-    lists: [
-      "HTML",
-      "CSS",
-      "Javascript",
-      "React",
-      "Vue",
-      "TailwindCSS",
-      "Framer-motion",
-    ],
-    Tcolor: "text-sky-500",
-    Bcolor: "border-sky-500",
-    thought:
-      "On creating engaging projects i'm focus on React and Tailwind CSS. I love the efficiency of Tailwind for styling and the flexibility of React for dynamic applications. While React and Tailwind are my mainstays, I'm always open to exploring other stacks",
-  },
-  backend: {
-    title: "Backend",
-    lists: ["Node", "Express", "MongoDB", "PostgreSQL", "Prisma", "RabbitMQ"],
-    Tcolor: "text-yellow-500",
-    Bcolor: "border-yellow-500",
-    thought:
-      "I'm a Node.js enthusiast with a strong focus on building robust and scalable server-side applications using Express. MongoDB is my preferred database for its flexibility in handling diverse data structures. While I primarily work with Node, Express, and MongoDB, I also have experience with PostgreSQL for projects that require relational databases.",
-  },
-  tools: {
-    title: "Tools",
-    lists: ["Vite", "Postman", "Figma", "Draw.io", "Docker"],
-    Tcolor: "text-violet-500",
-    Bcolor: "border-violet-500",
-    thought:
-      "In my toolkit, Vite powers my front-end development with its speed and efficiency, while Postman simplifies API testing and development. For design collaboration, Figma is my go-to, offering a seamless platform for creating and sharing designs. These tools collectively enhance my workflow, enabling quick and effective development and design processes.",
-  },
-};
-
+import CONTENTS from "../../data/skills.json";
 import { useState } from "react";
 
 export default function Skills() {

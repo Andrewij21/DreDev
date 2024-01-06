@@ -1,34 +1,4 @@
-import memories from "/portofolio/memories.png";
-import todo from "/portofolio/todo.png";
-import tod from "/portofolio/tod.png";
-import cinemaku from "/portofolio/cinemaku.png";
-
-const portofolio = [
-  {
-    title: "Memories App",
-    img: memories,
-    link: "https://memory-phi-ten.vercel.app/",
-    body: "Website for those of you who want to save memories with your loved ones",
-  },
-  {
-    title: "Cinemaku",
-    img: cinemaku,
-    link: "https://cinemaku.vercel.app/",
-    body: "See the latest trending movies & series",
-  },
-  {
-    title: "Truth or Dare",
-    img: tod,
-    link: "https://andrewij21.github.io/Truth-or-Dare/",
-    body: "Simple Truth or Dare game for friends and familiy to play along",
-  },
-  {
-    title: "My Todo",
-    img: todo,
-    link: "https://master--poetic-halva-a0d5af.netlify.app/",
-    body: "Simple Todo apps using React with authentication and validation",
-  },
-];
+import portofolio from "../../data/portofolio.json";
 
 export default function Portofolio() {
   return (

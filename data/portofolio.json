@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Memories App",
+      "img": "../portofolio/memories.png",
+      "link": "https://memory-phi-ten.vercel.app/",
+      "body": "Website for those of you who want to save memories with your loved ones"
+    },
+    {
+      "title": "Cinemaku",
+      "img": "../portofolio/cinemaku.png",
+      "link": "https://cinemaku.vercel.app/",
+      "body": "See the latest trending movies & series"
+    },
+    {
+      "title": "Truth or Dare",
+      "img": "../portofolio/tod.png",
+      "link": "https://andrewij21.github.io/Truth-or-Dare/",
+     " body": "Simple Truth or Dare game for friends and familiy to play along"
+    },
+    {
+      "title": "My Todo",
+      "img": "../portofolio/todo.png",
+      "link": "https://master--poetic-halva-a0d5af.netlify.app/",
+      "body": "Simple Todo apps using React with authentication and validation"
+    }
+  ]
