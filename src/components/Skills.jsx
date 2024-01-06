@@ -17,7 +17,7 @@ const CONTENTS = {
   },
   backend: {
     title: "Backend",
-    lists: ["Node", "Express", "MongoDB", "PostgreSQL", "RabbitMQ"],
+    lists: ["Node", "Express", "MongoDB", "PostgreSQL", "Prisma", "RabbitMQ"],
     Tcolor: "text-yellow-500",
     Bcolor: "border-yellow-500",
     thought:
@@ -41,7 +41,7 @@ export default function Skills() {
   return (
     <section id="skills" className="min-h-[20rem] dark:text-white">
       <h3 className="text-3xl font-medium text-teal-500 dark:text-teal-400 justify-end mb-6">
-        Skills
+        Skills 👊
       </h3>
       <div className="grid grid-cols-6 gap-x-2 gap-y-4">
         <div className="space-y-1 col-span-4 md:col-span-1">
