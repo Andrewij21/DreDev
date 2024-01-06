@@ -1,7 +1,7 @@
 export default function About() {
   return (
     <section id="about" className="dark:text-white">
-      <h4 className="text-5xl font-bold py-4 text-teal-500 dark:text-teal-400">
+      <h4 className="text-5xl font-bold tracking-wide py-4 text-teal-500 dark:text-teal-400">
         Hello! 👋
       </h4>
       <p className="">
@@ -36,6 +36,11 @@ export default function About() {
           andrewijaya988@gmail.com
         </span>
       </p>
+      <a href="/DreDev/Resume.pdf" target="_blank">
+        <button className="uppercase px-8 py-4 mt-8 rounded-lg text-sm text-white font-semibold tracking-widest bg-gradient-to-b from-teal-500 to-emerald-500 hover:to-cyan-500">
+          resume
+        </button>
+      </a>
     </section>
   );
 }
