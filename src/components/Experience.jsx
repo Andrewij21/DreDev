@@ -58,11 +58,11 @@ export default function Experience() {
           >
             <div className="flex justify-between mb-2">
               <div className="grid md:grid-cols-[60px_auto]">
-                <div className="row-span-2 h-[50px] w-[55px]">
+                <div className="row-span-2 h-[50px] w-[55px] bg-white rounded-full overflow-hidden">
                   <img
                     src={card.img}
                     alt="developer"
-                    className="object-contain rounded-full h-full w-full"
+                    className="object-contain h-full w-full"
                   />
                 </div>
                 <h3 className="text-lg font-medium text-teal-500 dark:text-teal-400 tracking-wider">
