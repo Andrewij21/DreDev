@@ -26,7 +26,7 @@ export default function Portofolio() {
         {portofolio.map((project, i) => {
           return (
             <div className="space-y-4 mb-6" key={i}>
-              <h3 className="text-xl w-fit font-medium tracking-wider mb-2 hover:text-cyan-500">
+              <h3 className="text-xl w-fit font-medium tracking-wider mb-2 hover:text-teal-400">
                 <a href={project.link} rel="noreferrer" target="_blank">
                   {project.title}
                 </a>

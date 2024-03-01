@@ -1,6 +1,6 @@
-import { BsMoonStarsFill } from "react-icons/bs";
-import { FaSun } from "react-icons/fa6";
-
+// import { BsMoonStarsFill } from "react-icons/bs";
+// import { FaSun } from "react-icons/fa6";
+import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
 Navbar.propTypes = {
@@ -8,12 +8,32 @@ Navbar.propTypes = {
   setDarkMode: PropTypes.func,
 };
 
-export default function Navbar({ darkMode, setDarkMode }) {
+const links = ["about", "services", "skills", "works"];
+
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
+
+const item = {
+  hidden: { opacity: 0 },
+  show: { opacity: 1 },
+};
+export default function Navbar() {
   return (
-    <nav className="py-10 flex justify-between relative font-semibold dark:text-white">
+    <nav className="py-10 flex justify-center relative font-semibold dark:text-white">
       {/* <h1 className=" z-10 text-xl md:text-2xl">Andre</h1> */}
 
-      <h1 className="">
+      {/* <motion.h1
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         {darkMode ? (
           <FaSun
             className="cursor-pointer text-2xl fill-yellow-300"
@@ -25,34 +45,21 @@ export default function Navbar({ darkMode, setDarkMode }) {
             onClick={() => setDarkMode(!darkMode)}
           />
         )}
-      </h1>
-      <ul className="flex items-center w-auto md:py-0 py-4 gap-x-4">
-        <li className="hover:text-cyan-500">
-          <a href="#about" className="rounded-md">
-            About
-          </a>
-        </li>
-        <li className="hover:text-cyan-500">
-          <a href="#services" className="rounded-md ">
-            Services
-          </a>
-        </li>
-        <li className="hover:text-cyan-500">
-          <a href="#skills" className="rounded-md ">
-            Skills
-          </a>
-        </li>
-        <li className="hover:text-cyan-500">
-          <a href="#experience" className="rounded-md ">
-            Experiences
-          </a>
-        </li>
-        <li className="hover:text-teal-500">
-          <a href="#portofolio" className="rounded-md ">
-            Works
-          </a>
-        </li>
-      </ul>
+      </motion.h1> */}
+      <motion.ul
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="flex items-center w-auto md:py-0 py-4 gap-x-4"
+      >
+        {links.map((link, i) => (
+          <motion.li key={i} variants={item} className="hover:text-cyan-500">
+            <a href={`#${link}`} className="rounded-md capitalize">
+              {link}
+            </a>
+          </motion.li>
+        ))}
+      </motion.ul>
     </nav>
   );
 }

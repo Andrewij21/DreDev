@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export default function About() {
   return (
     <section id="about" className="dark:text-white">
@@ -11,8 +13,8 @@ export default function About() {
             University of Bandar Lampung.
           </a>
         </span>
-        I&apos;m a active member in internet of things laboratory & Bank
-        Indonesia organization (genbi).
+        I&apos;m a member in internet of things laboratory & Bank Indonesia
+        organization (genbi).
       </p>
       <br />
       <p className="">
@@ -37,9 +39,12 @@ export default function About() {
         </span>
       </p>
       <a href="/DreDev/Resume.pdf" target="_blank">
-        <button className="uppercase px-8 py-4 mt-8 rounded-lg text-sm text-white font-semibold tracking-widest bg-gradient-to-b from-teal-500 to-emerald-500 hover:to-cyan-500">
+        <motion.button
+          className="uppercase px-8 py-4 mt-8 rounded-lg text-sm text-white font-semibold tracking-widest bg-gradient-to-b from-teal-500 to-emerald-500 hover:to-cyan-500"
+          whileHover={{ scale: 1.2 }}
+        >
           resume
-        </button>
+        </motion.button>
       </a>
     </section>
   );

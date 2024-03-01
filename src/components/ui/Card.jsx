@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import PropTypes from "prop-types";
 
 Card.propTypes = {
@@ -6,10 +7,13 @@ Card.propTypes = {
 
 export default function Card({ content }) {
   return (
-    <div className="flex flex-col justify-between items-center text-center space-y-4 shadow-lg px-10 py-6 rounded-xl my-10 dark:hover:bg-gradient-to-b dark:hover:from-cyan-500 basis-1/2">
+    <motion.div
+      whileHover={{ scale: 1.1, backgroundColor: "#14b8a6" }}
+      className="flex flex-col justify-between items-center text-center space-y-4 shadow-lg px-10 py-6 rounded-xl my-10 dark:hover:bg-gradient-to-b basis-1/2 group"
+    >
       <img src={content.img} className="w-24 h-24 inline-block" />
       <div>
-        <h3 className="text-lg font-medium dark:text-emerald-500">
+        <h3 className="text-lg font-medium dark:text-emerald-500 dark:group-hover:text-slate-200">
           {content.title}
         </h3>
         <p className="py-2 text-[1rem]">{content.body}</p>
@@ -22,6 +26,6 @@ export default function Card({ content }) {
           </p>
         ))} */}
       </div>
-    </div>
+    </motion.div>
   );
 }
